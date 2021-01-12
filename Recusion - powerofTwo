@@ -1,0 +1,11 @@
+function powerofTwo(n) {
+  
+  if (n == 0){
+    return 1
+  }
+  return 2 * powerofTwo(n-1)
+}
+console.log(powerofTwo(0))
+console.log(powerofTwo(1))
+console.log(powerofTwo(3))
+console.log(powerofTwo(6))
