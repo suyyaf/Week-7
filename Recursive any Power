@@ -1,0 +1,14 @@
+function recursionPower(num,pow) {
+
+  if (num == 0){
+    return 0;
+  }
+  if (pow == 0){
+    return 1;
+  }
+  return num * recursionPower(num, pow - 1)
+}
+console.log(recursionPower(0,4))
+console.log(recursionPower(2,0))
+console.log(recursionPower(2,1))
+console.log(recursionPower(2,2))
